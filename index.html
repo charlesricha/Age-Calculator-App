@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="inputs">
+
+    <div class="day box">
+      <label for="day">Day</label>
+      <input type="number" placeholder="DD" id="Day">
+      <p id="day-error "></p>
+    </div>
+
+    <div class="month box">
+      <label for="month">Month</label>
+      <input type="number" placeholder="MM" id="Month">
+      <p id="month-error "></p>
+    </div>
+
+    <div class="year box">
+      <label for="year">Year</label>
+      <input type="number" placeholder="YYYY" id="Year">
+      <p id="year-error"></p>
+    </div>
+  </div>
+
+  <div class="enterbtn">
+    <hr>
+    <button onclick="ageCalculation()" class="btn">
+ 
+      <img src="./assets/images/icon-arrow.svg" alt="">
+      
+    
+  </button>
+  </div>
+
+  <div class="output">
+    <p ><span id="Years">--</span>Years</p>
+    <p ><span id="Months">--</span>Months</p>
+    <p ><span id="Days">--</span>Days</p>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Charles Muthui</a>.
+
+  </div>
+
+  
+
+</div> 
+  
+  
+  
+  
+ 
+
+</body>
+<script src="script.js"></script>
+</html>
